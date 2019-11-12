@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="css\evaform.css" rel="stylesheet">
+ 	 <title>
+ 	 	tableaubo
+      </title>
+      
+ </head>
+ <body classe="container " >
+    <form  class="form" id="form" action="http://bienvu.net/script.php" method="post" >
+     <div class="row"> 
+         
+      <fieldset class="col-9 col-md-5 offset-1" >
+            <p>*Ces zones sont obligatoires</p>
+            <legend>Coordonnées</legend>
+            
+             <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="nom">Votre nom*:</label>
+                <input type="text" class="col-sm-6 form-control" name="Votre nom" id="nom" required>
+                <span id="oublinom">*</span><br>
+               </div>
+             <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="prénom">Votre prénom*:</label>
+                <input type="text" class="col-sm-6 form-control" id="pre" name="Votre prenom" required><br>
+                <span id="oublipre">*</span><br>
+               </div>
+           
+                <p>	Sexe*:</p>
+                <div>
+              <div class="form-check form-check-inline">
+                   <input class="form-check-input" type="radio" name="sexe" id="sex_1" value="Féminin">
+                   <label class="form-check-label " for="sex_1">Féminin</label>
+              </div>
+           
+              <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="sexe" id="sex_2" value="Masculin">
+                 <label for="form-check-label ">Masculin</label>
+               </div>
+            </div>
+              <div class="form-group row">
+                  <label for="ddn" class="col-sm-3 col-form-label">	Date de naissance:</label>
+                  <input type="date" class="col-sm-6 form-control" name="Date de naissance" id="ddn" required >
+                  <span id="oubliddn">*</span>
+               </div>
+              <div class="form-group row">
+                 <label class="col-sm-3 col-form-label" for="cd">Code Postale:</label>
+                 <input type="text" class="col-sm-6 form-control" id="cd" name="Votre code postal" required >
+                 <span id="oublicd">*</span>
+               </div>
+     	        <div class="form-group row">
+                 <label class="col-sm-3 col-form-label" for="adr">Adresse:	</label>
+                 <input type="text" class="col-sm-6 form-control" id="adr" name="Votre adress" required >
+                 <span id="oubliadr">*</span>
+               </div>
+              <div class="form-group row">
+                 <label class="col-sm-3 col-form-label" for="city"> Ville:	</label>
+                 <input type="text" class="col-sm-6 form-control" name="Votre Ville" id="city" required >
+                 <span id="oublicit">*</span><br>
+               </div>
+               <div class="form-group row">
+                  <label class="col-sm-3 col-form-label" for="em">  email*:	</label>
+                  <input type="text" class="col-sm-6 form-control" id="mail" name="Votre Email" placeholder="dave.loper@afpa.fr" required><br>					
+                  <span id="oublimail">*</span><br>
+               </div>
+      </fieldset>
+ 
+      <fieldset class="col-7 col-md-4 ml-md-7 offset-1" >
+               <legend>Votre demande</legend>
+               <div class="form-group">
+                  <label for="sujet"> Sujet*:</label>
+                  <select name="sujet" class="form-control" id="sujet" required> 
+                     <option value=">Mes commandes">Mes commandes</option>
+                     <option value="Questions sur un produit">Questions sur un produit</option>
+                     <option value="Réclamation" >Réclamation</option>
+                     <option value="autres" >Autres</option>
+                  </select>
+               </div>
+              <div class="form-group">
+                  <label for="votre question">Votre question*:</label> 
+                  <textarea name="commentaire" class="form-control" id ="votre question" rows="5" cols="50" required></textarea>
+              </div>
+      </fieldset>
+      
+          <div class="col-6 offset-1" id="trai">
+              <div class="form-check">
+                 <input type="checkbox" class="form-check-input" name="valider" id="valider">      
+                 <label class="form-check-label" for="valider">j'accepte le traitement informatique de ce  formulaire:  </label>
+               </div>
+               <div class="btn-toolbar" id="dern" role="toolbar" aria-label="Toolbar with button btn-primary">
+                 <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="reset" class="btn btn-primary" >annuler</button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Third group"></div>
+                  <button type="submit" class="btn btn-primary" id="envoyer" >envoyer</button>
+                  </div>
+            </div>               
+</div>
+
+  </form>
+  <script src="js\evaform.js"></script>
+</body> 
+</html>  
+
+   
